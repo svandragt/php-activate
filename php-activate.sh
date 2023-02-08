@@ -11,9 +11,12 @@ function php-activate {
                 $PHP_PICKED $@
             }
             echo "Activated: $PHP_PICKED"
+            php --version
+            hash -r
+        else
+            echo "Error: No matching PHP version found. Use one of the following:"
+            echo $VERSIONS
         fi
-        php --version
-        hash -r
         return
     fi
 
@@ -22,7 +25,8 @@ function php-activate {
         echo "Deactivated: $PHP_PICKED"
         unset PHP_PICKED
         unset -f php
+        php --version
+        hash -r
+        return
     fi
-    php --version
-    hash -r
 }
