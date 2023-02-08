@@ -7,7 +7,7 @@ Switch apt installed PHP versions within a local shell, without sudo (update-alt
 ```shell
 $ mkdir -p $HOME/opt/php-activate # or your place of choice
 $ cd !$
-$ curl -# -L https://github.com/svandragt/php-activate/tarball/master | tar -xz --strip 1
+$ curl -# -L https://github.com/svandragt/php-activate/tarball/main | tar -xz --strip 1
 ```
 
 ## Setup
