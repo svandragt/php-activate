@@ -21,7 +21,7 @@ source $HOME/opt/php-activate/php-activate.sh # or your place of choice
 ## Run examples
 
 ```shell
-# Activate a non-existin version
+# Activate a non-existing version
 $ php-activate 9
 Error: No matching PHP version found. Use one of the following:
 /usr/bin/php8.0
