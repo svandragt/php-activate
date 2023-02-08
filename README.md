@@ -48,6 +48,30 @@ PHP 8.1.15 (cli) (built: Feb  7 2023 11:31:36) (NTS)
 ...
 ```
 
+## Other software
+
+### Direnv
+
+Add the following to `~/.direnvrc`:
+
+```
+# Usage: use php <version>
+#
+# Loads the specified php version into the environent
+#
+use_php() {
+  source $HOME/opt/php-activate/php-activate.sh
+  php-activate $1
+  layout php
+}
+```
+
+then add the following to the project's `.envrc`:
+```
+use php 8.2
+```
+
+
 ## Credits
 
 Thanks to [wilmoore for php-version](https://github.com/wilmoore/php-version) which inspired this idea.
