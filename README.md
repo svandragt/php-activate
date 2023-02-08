@@ -1,5 +1,5 @@
 # php-activate
-PHP version switcher for apt installed ubuntu php versions.
+Switch apt installed PHP versions within a local shell, without sudo (update-alternatives), without compiling my own PHP (phpenv). without custom PHP versions (php-versions).
 
 
 ## Install
