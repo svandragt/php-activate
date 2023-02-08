@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-function php-activator {
+function php-activate {
     if ! [ -z "$1" ]
     then
         local VERSIONS=$(update-alternatives --query php | grep Alternative | cut -d ' ' -f2 )
