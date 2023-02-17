@@ -1,5 +1,9 @@
 # php-activate
-Switch apt installed PHP versions within a local shell, without sudo (update-alternatives), without compiling my own PHP (phpenv). without custom PHP versions (php-versions).
+Switch apt installed PHP versions within a local shell.
+
+* No sudo is required to switch versions (in contrast to update-alternatives), so it works in IDE terminals.
+* No need to compile PHP (in contrast to phpenv), just use your package manager. 
+* No need for manual PHP installs (in contrast to php-versions), system installed php versions are detected.
 
 ## Requirements
 
