@@ -1,6 +1,8 @@
 # php-activate
 Switch apt installed PHP versions within a local shell.
 
+Made for those working with multiple projects using a variety of PHP versions, this script will automatically switch to the correct PHP version after `cd`ing into the project folder. It does not require sudo, so even works in IDEs.
+
 * No sudo is required to switch versions (in contrast to update-alternatives), so it works in IDE terminals.
 * No need to compile PHP (in contrast to phpenv), just use your package manager. 
 * No need for manual PHP installs (in contrast to php-versions), system installed php versions are detected.
