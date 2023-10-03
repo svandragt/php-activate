@@ -80,6 +80,10 @@ then add the following to the project's `.envrc`:
 use php 8.2
 ```
 
+## Alternatives
+
+Please consider [asdf](https://asdf-vm.com/) with the [PHP plugin](https://github.com/asdf-community/asdf-php).
+
 
 ## Credits
 
