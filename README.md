@@ -24,8 +24,12 @@ $ curl -# -L https://github.com/svandragt/php-activate/tarball/main | tar -xz --
 Add the following line to your shell rc script:
 
 ```
-source $HOME/opt/php-activate/php-activate.sh # or your place of choice
+# Fish
+source $HOME/opt/php-activate/php-activate.fish
+# Bash or ZSH:
+source $HOME/opt/php-activate/php-activate.sh
 ```
+
 
 ## Run examples
 
