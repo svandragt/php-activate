@@ -9,7 +9,7 @@ Made for those working with multiple projects using a variety of PHP versions, t
 
 ## Requirements
 
-A bunch of PHP versions installed via apt.
+A bunch of PHP versions installed named `/usr/bin/php*`.
 
 ## Install
 
