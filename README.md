@@ -59,7 +59,7 @@ PHP 8.1.15 (cli) (built: Feb  7 2023 11:31:36) (NTS)
 ...
 ```
 
-## Other software
+## Integrations
 
 ### Direnv
 
@@ -79,6 +79,16 @@ use_php() {
 then add the following to the project's `.envrc`:
 ```
 use php 8.2
+```
+Now you can simply change into the project directory:
+
+```shell
+$ cd myproject
+direnv: loading ~/dev/myproject/.envrc
+direnv: using php 8.2
+Activated /usr/bin/php8.2
+PHP 8.2.2 (cli) (built: Feb  7 2023 11:28:53) (NTS)
+direnv: export [...] ~PHP_PICKED
 ```
 
 ## Alternatives
