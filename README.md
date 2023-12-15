@@ -1,5 +1,5 @@
 # php-activate
-Switch apt installed PHP versions within a local shell.
+Switch system installed PHP versions within a local shell session.
 
 Made for those working with multiple projects using a variety of PHP versions, this script will automatically switch to the correct PHP version after `cd`ing into the project folder. It does not require sudo, so even works in IDEs.
 
