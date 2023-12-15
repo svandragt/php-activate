@@ -21,13 +21,10 @@ $ curl -# -L https://github.com/svandragt/php-activate/tarball/main | tar -xz --
 
 ## Setup
 
-Add the following line to your shell rc script:
+Add the following line to your shell rc script (replace 8.2 with your default php version):
 
 ```
-# Fish
-source $HOME/opt/php-activate/php-activate.fish
-# Bash or ZSH:
-source $HOME/opt/php-activate/php-activate.sh
+source $HOME/opt/php-activate/php-activate.sh 8.2
 ```
 
 
@@ -50,13 +47,13 @@ Zend Engine v4.1.15, Copyright (c) Zend Technologies
     
 # Activate existing version
 $ php-activate 8.2
-Activated: /usr/bin/php8.2
+Activated /usr/bin/php8.2
 PHP 8.2.2 (cli) (built: Feb  7 2023 11:28:53) (NTS)
 ...
 
 # Deactivate (or use a different shell)
 $ php-activate
-Deactivated: /usr/bin/php8.2
+Deactivated /usr/bin/php8.2
 PHP 8.1.15 (cli) (built: Feb  7 2023 11:31:36) (NTS)
 ...
 ```
@@ -73,8 +70,7 @@ Add the following to `~/.direnvrc`:
 # Loads the specified php version into the environent
 #
 use_php() {
-  source $HOME/opt/php-activate/php-activate.sh
-  php-activate $1
+  source $HOME/opt/php-activate/php-activate.sh $1
   layout php
 }
 ```

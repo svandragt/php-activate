@@ -7,26 +7,24 @@ function php-activate {
         if echo $VERSIONS | grep -q "$1"
         then
             export PHP_PICKED=$(echo "$VERSIONS" | sort | grep "$1" | head -n 1)
-            function php {
-                $PHP_PICKED $@
-            }
-            echo "Activated: $PHP_PICKED"
-            php --version | grep built
-            hash -r
+            echo "Activated $PHP_PICKED"
         else
             echo "Error: No matching PHP version found. Use one of the following:"
             echo "$VERSIONS"
+            return
         fi
-        return
-    fi
-
-    if ! [ -z $PHP_PICKED ]
-    then    
-        echo "Deactivated: $PHP_PICKED"
-        unset PHP_PICKED
-        unset -f php
-        php --version | grep built
+    else
+        echo "Deactivated $PHP_PICKED"
+        unset -f php 
         hash -r
         return
     fi
+    function php {
+        $PHP_PICKED $@
+    }
+    export -f php
+    php --version | grep built
+    hash -r
 }
+
+php-activate $1
