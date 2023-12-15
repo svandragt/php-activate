@@ -16,6 +16,7 @@ A bunch of PHP versions installed via apt.
 ```shell
 $ mkdir -p $HOME/opt/php-activate # or your place of choice
 $ cd !$
+# Downloads a tarball from a GitHub repository, extracts its contents, and then strips the first directory level:
 $ curl -# -L https://github.com/svandragt/php-activate/tarball/main | tar -xz --strip 1
 ```
 
