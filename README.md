@@ -59,6 +59,8 @@ PHP 8.1.15 (cli) (built: Feb  7 2023 11:31:36) (NTS)
 ...
 ```
 
+Optionally provide a `--quiet` or `-q` argument to suppress successful output.
+
 ## Integrations
 
 ### Direnv
