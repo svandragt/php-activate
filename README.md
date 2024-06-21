@@ -20,12 +20,18 @@ $ cd !$
 $ curl -# -L https://github.com/svandragt/php-activate/tarball/main | tar -xz --strip 1
 ```
 
-## Setup
+## Shell Setup
 
 Add the following line to your shell rc script (replace 8.2 with your default php version):
 
 ```
+# BASH shell:
 source $HOME/opt/php-activate/php-activate.sh 8.2
+export -f php
+
+# ZSH Shell
+source $HOME/opt/php-activate/php-activate.sh 8.2
+typeset -f php >/dev/null
 ```
 
 
